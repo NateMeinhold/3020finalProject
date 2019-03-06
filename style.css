@@ -1,4 +1,13 @@
 .ingredients{
-  background-color: gray;
+  background-color: 0,0,0,0;
   list-style-type: none;
+}
+
+#hidden{
+  background-color: greenyellow;
+  text-align: center;
+}
+
+#first{
+  text-align: center;
 }

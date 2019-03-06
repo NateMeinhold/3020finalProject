@@ -18,6 +18,7 @@ document.addEventListener('DOMContentLoaded',function(e){
     //create new item
     let newItemEl = document.createElement('li');
     let newCheckboxEl = document.createElement('input');
+    //setting checkbox to each new item
     newCheckboxEl.setAttribute("type", "checkbox");
     newCheckboxEl.value = itemValue;
     let newSpanEl = document.createElement('span');
@@ -62,4 +63,6 @@ document.addEventListener('DOMContentLoaded',function(e){
 
 //need to research JS for edit/delet funtion
 
-
+//object keys in js 
+//Object.keys(object2).sort() 
+//could use to do something with object: const totalIngredients 
