@@ -48,9 +48,48 @@ document.addEventListener('DOMContentLoaded',function(e){
     list.appendChild(newItemEl);
     itemInput.value = '';
 
+  
+
 
   })
 })
+//becky's example
+//let keys = Object.keys(totalIngredients)
+//for (key of keys){
+//  if (obj[key]){
+//    console.log(`${obj[key]} is true` )
+//  } else {
+//  console.log(`${obj[key]} is false`)
+//  }
+//}
+
+//tried with an event listener
+//let keys = Object.keys(totalIngredients)
+//for (key of keys){
+  //if (obj[key]){
+    //console.log(`${obj[key]} is true` )
+    //newCheckboxEl.addEventListener('click', function(event){
+     // let previousListContainer = document.createElement('li');
+     // const previousListContainer = document.querySelector('#previous-list-container');
+    //ingredients.appendChild(totalIngredients);
+    //})
+  //} else {
+ // console.log(`${obj[key]} is false`)
+ // }
+//}
+
+//tried with a boolean
+//let keys = Object.keys(totalIngredients)
+//for (key of keys){
+//  if (obj[key]) === "true"{
+//    let totalIngredients.createElement('li');
+//    const previousListContainer = document.querySelector('#previous-list-container');
+//    ingredients.appendChild(totalIngredients);
+//  } else {
+//  console.log(`${obj[key]} is false`)
+//  }
+//}
+
 
 
 //need a class for list ingredient lists

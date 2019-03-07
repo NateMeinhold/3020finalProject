@@ -2,41 +2,51 @@
 <html>
 
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width">
-	<title>repl.it</title>
-	<link href="style.css" rel="stylesheet" type="text/css" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
-   <!-- here is where a new list could go <button type="new list">New List </button> -->
-	<form id="first">
-		<p> <!-- where the list forms need to add checkbox and edit/delete boxes to each item -->
-			<label for="item-input">Add Ingredient
-          <input type="text" name="item-input">
-          </label>
-          <button type="submit">Add to List</button>
-		</p>
+    <!-- here is where a new list could go <button type="new list">New List </button> -->
+    <form id="first">
+        <h2>Grocery List</h2>
+        <p class="add-item">
+            <!-- where the list forms need to add checkbox and edit/delete boxes to each item -->
+            <label for="item-input">Add Ingredient
+                <input type="text" name="item-input">
+            </label>
+            <button type="submit">Add to List</button>
+        </p>
     </form>
     <section id="hidden">
-    <ul class="ingredients">
-    <li>
-      <!--need to figure out how to add box and buttons to each list item -->
-<!-- <input type="checkbox"> -->
-<!-- <label>ingredients should go here</label> -->
-<!--<button class="edit">Edit</button> -->
-<!--<button class="delete">Delete</button> -->
-</li> <!--update JS to make buttons function-->
-</ul>
-<!--This is where I could put the "save" button to put the list below-->
-<!--<h2>Previous Lists</h2> -->
-<!--<ul id="previous-list-container">
+        <ul class="ingredients">
+            <li>
+
+                <!--<button class="delete">Delete</button> -->
+            </li>
+            <!--update JS to make buttons function-->
+        </ul>
+        <!--This is where I could put the "save" button to put the list below-->
+        <!--<ul id="previous-list-container">
         </ul> -->
+    </section>
+    <section id="reveal">
+        <h2>Purchased</h2>
+        <div class="purchased">
+            <ul id="previous-list-container">
+                <li>
+
+                </li>
+            </ul>
+        </div>
+
     </section>
     <script src="script.js"></script>
 
 
 
-  </body>
-  
+</body>
+
 </html>
