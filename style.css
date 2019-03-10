@@ -40,6 +40,7 @@
 /* new container where I want to put the "checked" items */
 #previous-list-container{
   list-style-type: none;
+  text-align: center;
 }
 
 /* the headers */
