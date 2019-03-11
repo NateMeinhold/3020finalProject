@@ -27,6 +27,7 @@ document.addEventListener('DOMContentLoaded', function (e) {
         ingredients.appendChild(newItemEl);
         let iconEl = document.createElement('i');
         //iconEl.innerHTML = <i class="fas fa-plus"></i>;
+        //iconEl.innerHTML = "fas fa-plus";
         iconEl.innerHTML = "add";
         //<i class="fas fa-plus"></i>
         newItemEl.appendChild(iconEl);
