@@ -18,19 +18,19 @@ document.addEventListener('DOMContentLoaded', function (e) {
         //create new item
         let newItemEl = document.createElement('li');
         let newCheckboxEl = document.createElement('input');
-        //setting checkbox to each new item
-        //ewCheckboxEl.setAttribute("type", "checkbox");
-        //newCheckboxEl.value = itemValue;
+        //setting add/plus to each new item
         let newSpanEl = document.createElement('span');
         newSpanEl.innerHTML = itemValue;
         newSpanEl.setAttribute("data-name", itemValue);
-        //newItemEl.appendChild(newCheckboxEl);
         newItemEl.appendChild(newSpanEl);
         const ingredients = document.querySelector('.ingredients');
         ingredients.appendChild(newItemEl);
         let iconEl = document.createElement('i');
+        //iconEl.innerHTML = <i class="fas fa-plus"></i>;
         iconEl.innerHTML = "add";
+        //<i class="fas fa-plus"></i>
         newItemEl.appendChild(iconEl);
+        //add things list item to "purchased" list
         iconEl.addEventListener("click", function (event) {
             let purchased = document.querySelector("#previous-list-container");
             let ingredientEl = event.target.previousSibling;
@@ -51,9 +51,6 @@ document.addEventListener('DOMContentLoaded', function (e) {
             }
             console.log(totalIngredients);
         })
-
-        //newItemEl = document.createElement("INPUT");
-        //newItemEl.setAttribute("type", "checkbox");
 
         //get a reference to list and append
         let list = document.querySelector('.ingredients');
