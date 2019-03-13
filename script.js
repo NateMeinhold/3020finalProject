@@ -26,9 +26,10 @@ document.addEventListener('DOMContentLoaded', function (e) {
         const ingredients = document.querySelector('.ingredients');
         ingredients.appendChild(newItemEl);
         let iconEl = document.createElement('i');
-        //iconEl.innerHTML = <i class="fas fa-plus"></i>;
+        iconEl.classList.add('fas');
+        iconEl.classList.add('fa-plus');
         //iconEl.innerHTML = "fas fa-plus";
-        iconEl.innerHTML = "add";
+        //iconEl.innerHTML = "add";
         //<i class="fas fa-plus"></i>
         newItemEl.appendChild(iconEl);
         //add things list item to "purchased" list
