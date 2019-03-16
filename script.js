@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function (e) {
         //create new item
         let newItemEl = document.createElement('li');
         let newCheckboxEl = document.createElement('input');
-        //setting add/plus to each new item
+        //setting plus to each new item
         let newSpanEl = document.createElement('span');
         newSpanEl.innerHTML = itemValue;
         newSpanEl.setAttribute("data-name", itemValue);
@@ -28,9 +28,6 @@ document.addEventListener('DOMContentLoaded', function (e) {
         let iconEl = document.createElement('i');
         iconEl.classList.add('fas');
         iconEl.classList.add('fa-plus');
-        //iconEl.innerHTML = "fas fa-plus";
-        //iconEl.innerHTML = "add";
-        //<i class="fas fa-plus"></i>
         newItemEl.appendChild(iconEl);
         //add things list item to "purchased" list
         iconEl.addEventListener("click", function (event) {
@@ -92,27 +89,6 @@ document.addEventListener('DOMContentLoaded', function (e) {
 // console.log(`${obj[key]} is false`)
 // }
 //}
-
-//tried with a boolean
-//let keys = Object.keys(totalIngredients)
-//for (key of keys){
-//  if (obj[key]) === "true"{
-//    let totalIngredients.createElement('li');
-//    const previousListContainer = document.querySelector('#previous-list-container');
-//    ingredients.appendChild(totalIngredients);
-//  } else {
-//  console.log(`${obj[key]} is false`)
-//  }
-//}
-
-
-
-//need a class for list ingredient lists
-//which would contain 
-//<input type="checkbox">
-//<label>ingredients Should go Here</label>
-//<button class="edit">Edit</button>
-//<button class="delete">Delete</button>
 
 
 //need to research JS for edit/delet funtion
