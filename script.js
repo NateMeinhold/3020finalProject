@@ -59,8 +59,9 @@ document.addEventListener('DOMContentLoaded', function (e) {
         list.appendChild(newItemEl);
         itemInput.value = '';
 
-
-
+        //creating the array 
+        //let salad = ['lettuce', 'tomato', 'feta', 'bacon'];
+        //let keys = Object.keys(salad)
 
     })
 })
