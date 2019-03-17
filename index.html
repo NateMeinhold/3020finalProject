@@ -11,11 +11,9 @@
 </head>
 
 <body>
-    <!-- here is where a new list could go <button type="new list">New List </button> -->
     <form id="first">
         <h1>Recipe Grocery List</h1>
         <p class="add-item">
-            <!-- where the list forms need to add checkbox and edit/delete boxes to each item -->
             <label for="item-input">Add Ingredients
                 <input type="text" name="item-input">
             </label>
@@ -24,23 +22,16 @@
     </form>
     <section id="hidden">
         <ul class="ingredients">
-            <li>
-
-                <!--<button class="delete">Delete</button> -->
+            <h2>Ingredients Needed:</h2>
+            <li>   
             </li>
-            <!--update JS to make buttons function-->
         </ul>
-        <!--This is where I could put the "save" button to put the list below-->
-        <!--<ul id="previous-list-container">
-        </ul> -->
     </section>
     <section id="reveal">
         <h2>Shopping List</h2>
         <div class="purchased">
             <ul id="previous-list-container">
-
             </ul>
-            <!--<p><input type="submit" value="Download Image"></p>-->
         </div>
     </section>
     <div class="how-to">
@@ -52,14 +43,14 @@
             <li>Time to go to the store!</li>
         </ol>
     </div>
-   <!-- <section id="menu">
+    <!--<section id="menu">
     <h2>Already Built Recipes!</h2>
   <div class="card">
   <img src="images/salad.jpg" alt="Avatar" style="width:100%">
   <div class="salad">
     <h4><b>Salad</b></h4> 
     <p>A delicious salad</p> 
-    <button type="submit">Make Shopping List</button>
+    <button id="push" type="submit">Make Shopping List</button>
 </div>
     </section>-->
     <script src="script.js"></script>
