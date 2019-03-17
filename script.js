@@ -6,9 +6,6 @@ document.addEventListener('DOMContentLoaded', function (e) {
         //stop event bubbling -what happens if you take this out?
         e.preventDefault();
 
-        //what is this?
-
-
         //get value of input
         let itemInput = document.querySelector('input[name=item-input]');
         let itemValue = itemInput.value;
@@ -57,8 +54,10 @@ document.addEventListener('DOMContentLoaded', function (e) {
         itemInput.value = '';
 
         //creating the array 
-        //let salad = ['lettuce', 'tomato', 'feta', 'bacon'];
-        //let keys = Object.keys(salad)
+       // let salad = ['lettuce', 'tomato', 'feta', 'bacon'];
+        salad.addEventListener('click', function(event){
+            
+        })
 
     })
 })
