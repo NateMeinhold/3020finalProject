@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function (e) {
         //stop event bubbling 
         e.preventDefault();
 
-         //add a new list item to list
+        //add a new list item to list
 
         //get value of input
         let itemInput = document.querySelector('input[name=item-input]');
@@ -40,13 +40,16 @@ document.addEventListener('DOMContentLoaded', function (e) {
             //prevent duplicate entry 
             function unique(list) {
                 let result = [];
-                $.each(list, function(i, e) {
+                $.each(list, function (i, e) {
                     if ($.inArray(e, result) == -1) result.push(e);
                 });
                 return result;
             }
-        }, {once: true}); 
-        
+        }, {
+            once: true
+        });
+        console.log(array.from('foodlist'));
+
         //check if checked
         newCheckboxEl.addEventListener('click', function (event) {
             //alert(this.value);
@@ -64,5 +67,11 @@ document.addEventListener('DOMContentLoaded', function (e) {
         list.appendChild(newItemEl);
         itemInput.value = '';
 
+        //create array for previous meals
+        function myFunction() {
+            let salad = ["lettuce", "tomato", "feta", "bacon"];
+            salad.toString();
+            document.getElementById('meals').innerHTML = salad;
+        } 
     })
 })
