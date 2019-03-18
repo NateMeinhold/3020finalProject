@@ -6,13 +6,13 @@ document.addEventListener('DOMContentLoaded', function (e) {
         //stop event bubbling 
         e.preventDefault();
 
+         //add a new list item to list
+
         //get value of input
         let itemInput = document.querySelector('input[name=item-input]');
         let itemValue = itemInput.value;
 
-        //add a new list item to list
-
-        //create new item
+        //create new list item
         let newItemEl = document.createElement('li');
         let newCheckboxEl = document.createElement('input');
         let newSpanEl = document.createElement('span');
@@ -22,13 +22,13 @@ document.addEventListener('DOMContentLoaded', function (e) {
         const ingredients = document.querySelector('.ingredients');
         ingredients.appendChild(newItemEl);
 
-        //adding the (+) to each list item
+        //add the (+) to each list item
         let iconEl = document.createElement('i');
         iconEl.classList.add('fas');
         iconEl.classList.add('fa-plus');
         newItemEl.appendChild(iconEl);
 
-        //add listed item to "purchased" list
+        //click the (+) to add listed item to "purchased" list
         iconEl.addEventListener("click", function (event) {
             let purchased = document.querySelector("#previous-list-container");
             let ingredientEl = event.target.previousSibling;
@@ -37,7 +37,16 @@ document.addEventListener('DOMContentLoaded', function (e) {
             let foodList = document.createElement('li');
             foodList.innerHTML = food;
             purchased.appendChild(foodList);
-        })
+            //prevent duplicate entry 
+            function unique(list) {
+                let result = [];
+                $.each(list, function(i, e) {
+                    if ($.inArray(e, result) == -1) result.push(e);
+                });
+                return result;
+            }
+        }, {once: true}); 
+        
         //check if checked
         newCheckboxEl.addEventListener('click', function (event) {
             //alert(this.value);
@@ -50,30 +59,33 @@ document.addEventListener('DOMContentLoaded', function (e) {
             console.log(totalIngredients);
         })
 
-        //get a reference to list and append
+        //get reference to list and append
         let list = document.querySelector('.ingredients');
         list.appendChild(newItemEl);
         itemInput.value = '';
 
-        //creating the array 
-        let salad = ["lettuce", "tomato", "feta", "bacon"];{
-            
-        }
-        //adding array items to list
-        let button = document.querySelector("salad");
-        button.addEventListener('click', function (event) {
-            let newItemEl = document.createElement('li');
-            let newCheckboxEl = document.createElement('input');
-            let newSpanEl = document.createElement('span');
-           newSpanEl.innerHTML = itemValue;
-            newSpanEl.setAttribute("data-name", itemValue);
-            newItemEl.appendChild(newSpanEl);
-            const ingredients = document.querySelector('.ingredients');
-            ingredients.appendChild(newItemEl);
-        })
-
     })
 })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -94,3 +106,10 @@ document.addEventListener('DOMContentLoaded', function (e) {
 //object keys in js 
 //Object.keys(object2).sort() 
 //could use to do something with object: const totalIngredients
+
+//creating the array 
+//let salad = ["lettuce", "tomato", "feta", "bacon"];{
+    //adding array items to list
+    //let button = document.querySelector("[salad]")
+
+//}
